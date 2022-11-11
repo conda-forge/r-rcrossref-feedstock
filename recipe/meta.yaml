@@ -1,4 +1,4 @@
-{% set version = '1.1.0' %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rcrossref_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rcrossref/rcrossref_{{ version }}.tar.gz
-  sha256: 7061a818fda0ddd60d120d11d98c451fcff1c5a9e826d25c4f96f13ad6d463d8
+  sha256: 809552f201c13148301f17496e381399c07c3e977bf452caee1baeea2a861b43
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
 
   rpaths:
@@ -62,14 +62,12 @@ about:
   home: https://docs.ropensci.org/rcrossref/, https://github.com/ropensci/rcrossref
 
   license: MIT
-  summary: Client for various 'CrossRef' 'APIs', including 'metadata' search with their old and
-    newer search 'APIs', get 'citations' in various formats (including 'bibtex', 'citeproc-json',
-    'rdf-xml', etc.), convert 'DOIs' to 'PMIDs', and 'vice versa', get citations for
-    'DOIs', and get links to full text of articles when available.
+  summary: Client for various 'CrossRef' 'APIs', including 'metadata' search with their old and newer search 'APIs', get 'citations' in various formats (including 'bibtex', 'citeproc-json', 'rdf-xml', etc.), convert 'DOIs' to 'PMIDs', and 'vice versa', get citations for 'DOIs', and get links to full text of articles when
+    available.
 
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
