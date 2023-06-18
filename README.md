@@ -1,11 +1,11 @@
-About r-rcrossref
-=================
+About r-rcrossref-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcrossref-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.ropensci.org/rcrossref/, https://github.com/ropensci/rcrossref
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcrossref-feedstock/blob/main/LICENSE.txt)
 
 Summary: Client for various 'CrossRef' 'APIs', including 'metadata' search with their old and newer search 'APIs', get 'citations' in various formats (including 'bibtex', 'citeproc-json', 'rdf-xml', etc.), convert 'DOIs' to 'PMIDs', and 'vice versa', get citations for 'DOIs', and get links to full text of articles when available.
 
