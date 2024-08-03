@@ -1,6 +1,5 @@
 {% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rcrossref
@@ -13,8 +12,7 @@ source:
   sha256: 809552f201c13148301f17496e381399c07c3e977bf452caee1baeea2a861b43
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
 
   rpaths:
