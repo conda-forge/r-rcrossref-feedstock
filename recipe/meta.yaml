@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rcrossref_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rcrossref/rcrossref_{{ version }}.tar.gz
-  sha256: 809552f201c13148301f17496e381399c07c3e977bf452caee1baeea2a861b43
+  sha256: ce6ddae677da200eb10824ec032844947b33e7a37c608d7aac65413f6f2fab04
 
 build:
-  number: 2
+  number: 0
   noarch: generic
 
   rpaths:
